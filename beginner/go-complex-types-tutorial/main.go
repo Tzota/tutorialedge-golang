@@ -11,7 +11,7 @@ func main() {
 	// our Team struct
 	type Team struct {
 		name    string
-		players [2]Person
+		players [3]Person
 	}
 
 	// declaring an empty array of strings
@@ -41,7 +41,7 @@ func main() {
 	var myTeam Team
 	fmt.Println(myTeam)
 
-	players := [...]Person{Person{name: "Forrest"}, Person{name: "Gordon"}}
+	players := [...]Person{Person{name: "Forrest"}, Person{name: "Gordon"}, Person{"tzota", 15}}
 	// declaring a team with players
 	celtic := Team{name: "Celtic FC", players: players}
 	fmt.Println(celtic)
