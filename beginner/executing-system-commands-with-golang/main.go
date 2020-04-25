@@ -10,6 +10,12 @@ func byteToString(b []byte) string {
 	return string(b[:])
 }
 
+type myByteArray []byte
+
+func (bytes myByteArray) toString() string {
+	return string(bytes[:])
+}
+
 func execute() {
 
 	// here we perform the pwd command.
@@ -26,7 +32,7 @@ func execute() {
 	// this to a string or else we will see garbage printed out in our console
 	// this is how we convert it to a string
 	fmt.Println("Command Successfully Executed")
-	fmt.Println(byteToString(out))
+	fmt.Println(myByteArray(out).toString())
 
 	// let's try the pwd command herer
 	out, err = exec.Command("pwd").Output()
