@@ -22,4 +22,5 @@ func main() {
 	employee.UpdateName("Forbsey")
 	employee.UpdateName2("Daniyal")
 	employee.PrintName()
+	fmt.Println(Foo())
 }
