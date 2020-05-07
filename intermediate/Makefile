@@ -1,4 +1,4 @@
-include .env
+#include .env
 
 # Make is verbose in Linux. Make it silent.
 MAKEFLAGS += --silent
