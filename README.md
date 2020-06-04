@@ -22,6 +22,7 @@ fmt.Println(input)
 ## Конвертирование строки в...
 ```go
 strconv.ParseFloat(input, 64)
+strings.NewReader(str) // io.Reader
 ```
 ## Чтение из файла
 ```go
